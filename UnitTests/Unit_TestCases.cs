@@ -113,33 +113,33 @@ namespace UnitTests
             Assert.AreEqual(2.00d, Calculator.result); //assert
         }
 
-        /* [Test]
-         public void Test4_Division_Nine_Divided_By_Three_EqualsTo_Three()
-         {
-             Calculator.num1 = 9.00d;//arrange
-             Calculator.num2 = 3.00d;//arrange
-             Calculator.Division(Calculator.num1, Calculator.num2); //act
-             Assert.AreEqual(3.00d, Calculator.result); //assert
-         }
+        [Test]
+        public void Test4_Division_One_Divided_By_Three_EqualsTo_ZeroDecimalThreeThree()
+        {
+            Calculator.num1 = 1.00d;//arrange
+            Calculator.num2 = 3.00d;//arrange
+            Calculator.Division(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(0.33d, Calculator.result); //assert
+        }
 
-         [Test]
-         public void Test5_Division_One_Divided_By_Three_EqualsTo_ZeroDecimalThreeThree()
-         {
-             Calculator.num1 = 1.00d;//arrange
-             Calculator.num2 = 3.00d;//arrange
-             Calculator.Division(Calculator.num1, Calculator.num2); //act
-             Assert.AreEqual(0.33d, Calculator.result); //assert
-         }
+        [Test]
+        public void Test5_Division_Two_Divided_By_One_EqualsTo_Two()
+        {
+            Calculator.num1 = 2.00d;//arrange
+            Calculator.num2 = 1.00d;//arrange
+            Calculator.Division(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(2.00d, Calculator.result); //assert
+        }
 
-         [Test]
-         public void Test6_Division_Two_Divided_By_One_EqualsTo_Two()
-         {
-             Calculator.num1 = 2.00d;//arrange
-             Calculator.num2 = 1.00d;//arrange
-             Calculator.Division(Calculator.num1, Calculator.num2); //act
-             Assert.AreEqual(2.00d, Calculator.result); //assert
-         }
- */
+        [Test]
+        public void Test6_Division_Nine_Divided_By_Three_EqualsTo_Three()
+        {
+            Calculator.num1 = 9.00d;//arrange
+            Calculator.num2 = 3.00d;//arrange
+            Calculator.Division(Calculator.num1, Calculator.num2); //act
+            Assert.AreEqual(3.00d, Calculator.result); //assert
+        }
+
 
     }
 }
