@@ -54,12 +54,12 @@ namespace Assignment3
             {
                 if (n2 != 0)
                 {
-                    result = Math.Round((n1 / n2), 2, MidpointRounding.AwayFromZero);
+                    result = Math.Round((n1 * n2), 2, MidpointRounding.AwayFromZero); //mutant introduced
                     Console.WriteLine("The division result of {0} & {1} post rounding off 2-decimal digits(if exist) is : {2}", n1, n2, result);
                 }
                 else if (n2 == 0)
                 {
-                    result = (n1 / n2);
+                    result = (n1 * n2); //mutant introduced
                     if (result == double.PositiveInfinity)
                     {
                         Console.WriteLine("The result after dividing {0} by {1} is: {2} ", n1, n2, result);
